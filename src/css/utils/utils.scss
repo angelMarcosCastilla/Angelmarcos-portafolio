@@ -1,0 +1,24 @@
+.flex{
+  display: flex;
+}
+
+.aling-center{
+  align-items: center;
+}
+
+.space-between{
+  justify-content: space-between;
+}
+
+.flex-column{
+  flex-direction: column;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.title{
+  color: var(--text-color-primary);
+  font-size: 3rem;
+}

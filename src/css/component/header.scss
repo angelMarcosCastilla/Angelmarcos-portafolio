@@ -1,0 +1,10 @@
+@import "./switch.scss";
+@import "./menu.scss";
+@import "./menuIcon.scss";
+.header{
+  position: sticky;
+  top: 0;
+  padding: .5rem 0;
+  width: 100%;
+  backdrop-filter: blur(10px);
+}

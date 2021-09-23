@@ -1,0 +1,17 @@
+extends ../template/template.pug
+block title
+    title  este es mi titulo
+block header 
+  include ../components/header.pug 
+block main
+  section#inicio
+    .container
+      .banner.flex.justify-center.aling-center
+        .banner-content
+          h1.title Hola! &#x1F44B;  
+            br 
+            |Soy Angel Marcos
+          p.banner__copy desarrollador web fronted
+  each portafolio in portafolios 
+    li= portafolio.name
+    li= portafolio.urlRepo

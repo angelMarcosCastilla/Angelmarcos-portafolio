@@ -1,0 +1,42 @@
+.menu__icon {
+	width: 40px;
+	height: 40px;
+	display: grid;
+	place-items: center;
+  z-index: 99;
+}
+
+@media (min-width: 700px){
+	.menu__icon{
+		display:none
+	}
+}
+.menu__barra {
+	display: block;
+	width: 100%;
+	height: 5px;
+	background-color: var(--color-menu-icon);
+	position: relative;
+	border-radius: 2px;
+	transition: transform ease-in 0.2s;
+}
+.menu__barra::after,
+.menu__barra::before {
+	content: "";
+	position: absolute;
+	width: 50%;
+	height: 5px;
+	background: inherit;
+	border-radius: 2px;
+	transition: transform ease-in 0.2s;
+}
+
+.menu__barra::after {
+	top: 12px;
+	right: 0;
+}
+.menu__barra::before {
+	bottom: 12px;
+	right: 0;
+	width: 70%;
+}

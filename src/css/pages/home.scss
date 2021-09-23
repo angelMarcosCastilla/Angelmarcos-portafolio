@@ -1,0 +1,14 @@
+@import "../component/header.scss";
+
+/*-------------banner-------------*/
+
+.banner{
+  height: calc( 100vh - 60px);
+}
+.banner-content{
+  background: cyan;
+}
+
+.banner__copy{
+  color: var(--text-color-secondary);
+}
