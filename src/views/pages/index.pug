@@ -6,12 +6,21 @@ block header
 block main
   section#inicio
     .container
-      .banner.flex.justify-center.aling-center
+      .banner.flex.space-between.aling-center.full-screen
+        .leftSide
         .banner-content
-          h1.title Hola! &#x1F44B;  
+          h1.title.banner__title Hola! &#x1F44B;  
             br 
             |Soy Angel Marcos
           p.banner__copy desarrollador web fronted
+          div.flex.space-between.aling-center.flex-column-md
+            a(href="#").btn.btn--github
+              img(src="./assets/imagenes/github-icon.svg", alt="icono de github").btn-icon.icon-github
+              span github
+            a(href="#").btn.btn--primary
+              img(src="./assets/imagenes/cv-icon.svg", alt="icono de github").btn-icon
+              span descargar mi cv
+        .rightSide 
   each portafolio in portafolios 
     li= portafolio.name
     li= portafolio.urlRepo

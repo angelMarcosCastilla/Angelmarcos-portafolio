@@ -9,12 +9,9 @@
 }
 .toggle-switch {
 	position: absolute;
-	left: var(--toggle-left);
-	display: block;
 	padding: 3px;
 	width: 35px;
 	height: 35px; 
-	background: var(--theme-icon)  no-repeat center;
 	background-size: 20px;
 	cursor: pointer;
 	border-radius: 50%;
