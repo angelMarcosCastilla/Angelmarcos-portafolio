@@ -6,7 +6,8 @@ body{
   margin: 0;
   background-color: var(--bg-color-primary);
   font-family: "Roboto", sans-serif;
-  color: var(--text-color-secondary)
+  color: var(--text-color-secondary);
+  font-size: 18px;
 }
 img,svg{
   max-width: 100%;

@@ -20,7 +20,32 @@ block main
             a(href="#").btn.btn--primary
               img(src="./assets/imagenes/cv-icon.svg", alt="icono de github").btn-icon
               span descargar mi cv
-        .rightSide 
+        .rightSide
+    section#sobreMi
+      .container.full-screen-md
+        .container-about.flex.space-between.aling-center
+          .container__image
+            img(src="./assets/imagenes/foto.png", alt="foto de ANGEL MARCOS").photo-about
+          .container__info
+            h2.title Sobre mi
+            p Hola! soy Angel Marcos Castilla ,Soy un estudiante de Ingeniería de software, apasioando por el mundo del progamacion
+            | me encanta aprender nuevas cosas y hacer deporte.
+            h3 Habilidades
+              p fronted 
+                div
+                  img(src="./assets/imagenes/html5-icon.svg", alt="icon html").icon-technologies
+                  img(src="./assets/imagenes/css-icon.svg", alt="icon css").icon-technologies
+                  img(src="./assets/imagenes/js-icon.svg", alt="icon javascript").icon-technologies
+                  img(src="./assets/imagenes/sass-icon.svg", alt="icon sass").icon-technologies
+                  img(src="./assets/imagenes/react-icon.svg", alt="icon react").icon-technologies
+              p backend
+                div
+                  img(src="./assets/imagenes/nodejs-icon.svg", alt="icon node").icon-technologies
+                  img(src="./assets/imagenes/php.svg", alt="icon php").icon-technologies
+      section#portafolio     
+            
+
+ 
   each portafolio in portafolios 
     li= portafolio.name
     li= portafolio.urlRepo

@@ -33,7 +33,9 @@
   font-weight: 600;
 
 }
-
+.text-center{
+  text-align: center;
+}
 
 .full-screen{
   height: calc( 100vh - 65px );
@@ -44,4 +46,12 @@
   flex-direction: column;
   gap:2rem
 }
+
+.full-screen-md{
+  height: calc( 100vh - 65px ) ;
+}
+}
+
+.title-3{
+  font-size: 1.5rem;
 }
