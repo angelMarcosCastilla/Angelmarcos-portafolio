@@ -1,4 +1,4 @@
-:root{
+body{
     --switch-color-toggle: #0c0e15;
     --switch-color: #1982a4;
     --color-menu-icon: #0c0e15;
@@ -7,5 +7,23 @@
     --text-color-secondary: #13151D;
 
     --bg-color-primary: #f3f7fd;
-    --color-secondary: #F1015D;
+    --color-secondary: #1982A4;
+
+    --bg-card:white;
+
+    --bg-secondary: #CFDEE690;
+
+}
+
+body.dark{
+    --switch-color-toggle: #0c0e15;
+    --switch-color: #1982a4;
+    --color-menu-icon: #0c0e15;
+
+    --text-color-primary: whitw;
+    --text-color-secondary: #f3f7fd;
+    --bg-card:#0C0E15;
+    --bg-color-primary: #0C0E15;
+    --bg-secondary: #1D223390;
+
 }

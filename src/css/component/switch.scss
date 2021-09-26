@@ -16,5 +16,19 @@
 	cursor: pointer;
 	border-radius: 50%;
 	background-color: var(--switch-color-toggle);
-	transition:all .2s ease-in-out;
+	transition:transform .2s ease-in-out;
+}
+.icon-toggle-sun{
+	display: none;
+}
+.toggle-switch--active .icon-toggle-sun{
+	display: block;
+}
+
+.toggle-switch--active .icon-toggle-moon {
+	display: none;
+}
+
+.toggle-switch--active {
+	transform: translateX(25px);
 }

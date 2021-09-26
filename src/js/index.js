@@ -11,5 +11,14 @@ const menuToggle = (idToggleMenu, idNavbar) => {
   }
   }
 
+const $swtichtoggle = document.getElementById("switch");
+
 
 menuToggle("menu-icon", "menu");
+
+addEventListener("click", (e) => {
+  if(e.target.closest(".switch")){
+    $swtichtoggle.classList.toggle("toggle-switch--active")
+    document.body.classList.toggle("dark")
+  }
+})

@@ -41,17 +41,31 @@
   height: calc( 100vh - 65px );
 }
 
+@media (min-width: 700px) {
+  .full-screen-md{
+    min-height: calc( 100vh - 65px ) ;
+  }
+}
+
 @media (max-width: 700px){
 .flex-column-md{
   flex-direction: column;
   gap:2rem
 }
 
-.full-screen-md{
-  height: calc( 100vh - 65px ) ;
-}
 }
 
 .title-3{
   font-size: 1.5rem;
+}
+
+.title-gradient{
+  background: rgb(25,130,164);
+  background: linear-gradient(222deg, rgba(25,130,164,1) 1%, rgba(36,189,240,1) 100%);
+  background-clip: text;
+  -webkit-text-fill-color:transparent;
+}
+
+html{
+  scroll-behavior: smooth;
 }
