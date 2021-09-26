@@ -10,7 +10,7 @@ body{
     --color-secondary: #1982A4;
 
     --bg-card:white;
-
+    --bg-menu : white;
     --bg-secondary: #CFDEE690;
 
 }
@@ -18,8 +18,9 @@ body{
 body.dark{
     --switch-color-toggle: #0c0e15;
     --switch-color: #1982a4;
-    --color-menu-icon: #0c0e15;
-
+    --color-menu-icon: #f3f7fd;
+    --bg-menu : #151926;
+    
     --text-color-primary: whitw;
     --text-color-secondary: #f3f7fd;
     --bg-card:#0C0E15;

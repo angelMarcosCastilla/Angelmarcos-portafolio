@@ -9,16 +9,36 @@ const menuToggle = (idToggleMenu, idNavbar) => {
         
       })
   }
-  }
+}
+
+const saveThemeLocalStorage = () => {
+  !document.body.classList.contains("dark")
+  ? localStorage.setItem("themeAM", "dark")
+  : localStorage.removeItem("themeAM")
+}
+
+const changeTheme = () => {
+  $swtichtoggle.classList.toggle("toggle-switch--active")
+  document.body.classList.toggle("dark")
+}
 
 const $swtichtoggle = document.getElementById("switch");
 
 
-menuToggle("menu-icon", "menu");
 
 addEventListener("click", (e) => {
-  if(e.target.closest(".switch")){
-    $swtichtoggle.classList.toggle("toggle-switch--active")
-    document.body.classList.toggle("dark")
+  if(e.target.closest(".switch")){ 
+    saveThemeLocalStorage();
+    changeTheme()
   }
+})
+
+
+addEventListener("DOMContentLoaded", () => {
+  if(localStorage.getItem("themeAM")){
+    document.body.classList.add("dark")
+    $swtichtoggle.classList.add("toggle-switch--active")
+    
+  }
+  menuToggle("menu-icon", "menu");
 })
