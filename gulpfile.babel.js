@@ -50,7 +50,7 @@ gulp.task('pug-docs', () => {
     .pipe(cacheBust({
       type:"timestamp"
     }))
-    .pipe(gulp.dest('./docs'));
+    .pipe(gulp.dest('./docs/'));
 });
 
 gulp.task('sass', () => {
@@ -106,7 +106,7 @@ gulp.task('clean', () => {
 
 gulp.task('imgmin', () => {
   return gulp
-    .src('./src/assets/imagenes/*')
+    .src('./src/assets/imagenes/**')
     .pipe(plumber())
     .pipe(
       imagemin([
@@ -142,7 +142,7 @@ gulp.task('default', () => {
 
 
 gulp.task('docs', () => {
-   gulp.watch('./src/views/**/*.pug', gulp.series('html-min-docs'))
-   gulp.watch('./src/css/**/*.scss', gulp.series('styles-docs'))
+   gulp.watch('./src/views/**/*.pug', gulp.series('pug-docs'))
+   gulp.watch('./src/css/**/*.scss', gulp.series('sass-docs'))
    gulp.watch('./src/js/*.js', gulp.series('babel-docs'))
 });

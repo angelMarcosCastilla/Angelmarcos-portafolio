@@ -101,27 +101,26 @@
 }
 
 .grid-portafolio{
-  display: flex;
-  justify-content: space-between;
-  gap:30px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
   align-content: center;
+  gap: 25px;
   padding: 3rem 0;
+
 }
 
 .portafolio-card{
   box-shadow: 0 5px 5px var(--bg-secondary);
-  width: 350px;
   background-color: var(--bg-card);
 }
 
 .portafolio-card__body, .portafolio-card__footer{
- padding: 1rem ;
+ padding: 2rem ;
 }
 
 .portafolio-card__image{
   display: block;
-  height: 150px;
+  height: 180px;
   width: 100%;
   object-fit: cover;
 }
@@ -132,4 +131,7 @@
 .footer{
   padding: 2rem 0;
   background-color: var(--bg-secondary);
+}
+.footer-social{
+  gap: 1rem;
 }
