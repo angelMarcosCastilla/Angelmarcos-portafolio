@@ -31,6 +31,7 @@ addEventListener("click", (e) => {
     saveThemeLocalStorage();
     changeTheme()
   }
+  
 })
 
 

@@ -20,6 +20,10 @@
   color: var(--text-color-primary);
   font-size: 3rem;
   font-family: "Raleway", sans-serif;
+
+  @media (max-width: 700px) {
+    font-size: 2rem;
+  }
 }
 
 .btn{

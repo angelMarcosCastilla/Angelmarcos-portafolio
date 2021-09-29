@@ -3,6 +3,7 @@
 /*-------------banner-------------*/
 .banner-content {
   text-align: center;
+  padding: .5rem;
 }
 .rightSide,
 .leftSide {
@@ -17,7 +18,7 @@
   font-size: 4rem;
   margin-bottom: 1rem;
   @media (max-width: 700px) {
-    font-size: 2.5rem;
+    font-size: 2.2em;
   }
 }
 .banner__copy {
@@ -85,15 +86,6 @@
 }
 
 
-.option__item--active::before {
-  content: "";
-  position: absolute;
-  border-top: 10px solid transparent;
-  border-left: 10px solid var(--color-secondary);
-  border-bottom: 10px solid transparent;
-  transform: rotate(-90deg);
-  top: -15px;
-}
 .icon-technologies{
   display: inline-block;
   width: 50px;
@@ -133,5 +125,6 @@
   background-color: var(--bg-secondary);
 }
 .footer-social{
-  gap: 1rem;
+  gap: 1.5rem;
+  align-items: center;
 }
